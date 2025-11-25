@@ -1,6 +1,7 @@
 import kernel from './bootstrap/kernel';
 import config from './config/app.config';
 
+// Application entry point - initializes and starts the Express server
 (async () => {
   try {
     const server = await kernel();

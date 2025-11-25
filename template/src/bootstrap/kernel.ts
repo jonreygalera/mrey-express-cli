@@ -10,7 +10,10 @@ export const appKernel : IAppKernel = {
 
 export default async function(): Promise<Express | void> {
   try {
+    // Database connection initialization with error handling
     await appKernel.database.createConnection();
+
+    // Register all application providers for runtime execution
     (new RegisterProvider(appKernel)).register();
     return appKernel.appExpress;
   } catch (error) {
