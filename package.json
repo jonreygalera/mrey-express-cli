@@ -1,34 +1,46 @@
 {
   "name": "@mreycode/mrey-express-cli",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A CLI tool for generating Express.js applications",
-  "main": "index.js",
-  "bin": {
-    "my-express-cli": "bin/cli.js"
-  },
   "keywords": [
     "express",
     "cli",
     "generator",
     "scaffold"
   ],
-  "author": "jonreygalera@gmail.com",
+  "homepage": "https://github.com/jonreygalera/mrey-express-cli#readme",
+  "bugs": {
+    "url": "https://github.com/jonreygalera/mrey-express-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonreygalera/mrey-express-cli.git"
+  },
   "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "jonreygalera@gmail.com",
+  "type": "commonjs",
+  "main": "index.js",
+  "bin": {
+    "my-express-cli": "bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "template/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "commander": "^14.0.2",
     "fs-extra": "^11.3.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jonreygalera/mrey-express-cli"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=14.0.0"
-  },
-  "files": [
-    "bin/",
-    "templates/",
-    "README.md",
-    "LICENSE"
-  ]
+  }
 }

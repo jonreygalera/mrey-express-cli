@@ -1,11 +1,7 @@
 {
-  "name": "@mreycode/mrey-express",
-  "version": "0.0.1",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist/**/*"
-  ],
+  "name": "mrey-express-app",
+  "version": "1.0.0",
+  "main": "src/server.ts",
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
@@ -13,8 +9,7 @@
     "lint": "eslint src/**/*.ts",
     "check": "tsc --noEmit",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "prepublishOnly": "npm run build"
+    "test:watch": "jest --watch"
   },
   "keywords": [
     "express",
@@ -24,7 +19,7 @@
   ],
   "author": "Your Name <your.email@example.com>",
   "license": "ISC",
-  "description": "A TypeScript Express.js framework with built-in middleware and authentication",
+  "description": "A TypeScript Express.js application with built-in middleware and authentication",
   "repository": {
     "type": "git",
     "url": "https://github.com/jonreygalera/mrey-express-cli/tree/main/template"
