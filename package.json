@@ -1,0 +1,12 @@
+{
+  "name": "my-express-cli",
+  "version": "1.0.0",
+  "bin": {
+    "my-express-cli": "bin/cli.js"
+  },
+  "dependencies": {
+    "commander": "^14.0.2",
+    "fs-extra": "^11.3.2"
+  },
+  "author": "jonreygalera@gmail.com"
+}
