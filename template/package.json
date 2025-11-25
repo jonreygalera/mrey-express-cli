@@ -1,7 +1,11 @@
 {
-  "name": "mrey-express",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@mreycode/mrey-express",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
@@ -9,12 +13,25 @@
     "lint": "eslint src/**/*.ts",
     "check": "tsc --noEmit",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "express",
+    "framework",
+    "typescript",
+    "api"
+  ],
+  "author": "Your Name <your.email@example.com>",
   "license": "ISC",
-  "description": "",
+  "description": "A TypeScript Express.js framework with built-in middleware and authentication",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonreygalera/mrey-express-cli/tree/main/template"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "dependencies": {
     "@types/compression": "^1.8.1",
     "@types/cookie-parser": "^1.4.10",
