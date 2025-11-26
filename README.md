@@ -1,4 +1,4 @@
-# My Express CLI
+# Mrey Express CLI
 
 A professional command-line interface tool for quickly generating Express.js TypeScript projects with a standardized structure and essential utilities.
 
@@ -12,6 +12,7 @@ A professional command-line interface tool for quickly generating Express.js Typ
 - **MongoDB Integration**: Pre-configured Mongoose connection for database access
 
 ## Installation
+
 ```bash
 npm i -g @mreycode/mrey-express-cli
 ```
@@ -19,11 +20,13 @@ npm i -g @mreycode/mrey-express-cli
 ## Usage Cheat Sheet
 
 - **Create Project**:
+
 ```bash
 mrey-express new <project-name>
 ```
 
 - **What it includes**:
+
   - Express.js (TypeScript)
   - tsconfig.json (strict)
   - Jest testing setup

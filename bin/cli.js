@@ -15,11 +15,11 @@ program
     const targetPath = path.join(process.cwd(), projectName);
 
     if (fs.existsSync(targetPath)) {
-      console.error(`❌ Directory "${projectName}" already exists`);
+      console.error(`>> ❌ Directory "${projectName}" already exists`);
       process.exit(1);
     }
 
-    console.log("📥 Cloning template...");
+    console.log(">> 📥 Cloning template...");
     execSync(`git clone ${TEMPLATE_REPO} ${projectName}`, { stdio: "inherit" });
 
     // Remove the cloned .git folder so the new project isn't a git repo from your template
