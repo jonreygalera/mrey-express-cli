@@ -47,7 +47,7 @@ program
       // Generate APP_KEY
       let envContent = fs.readFileSync(envPath, 'utf-8');
       const key = crypto.randomBytes(32).toString('base64');
-      const appKeyLine = `APP_KEY=${key}`;
+      const appKeyLine = `APP_KEY=mrey:${key}`;
 
       if (envContent.includes('APP_KEY=')) {
         envContent = envContent.replace(/APP_KEY=.*/, appKeyLine);
